@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>朝夕间</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="朝夕间">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="朝夕间">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="朝夕间">
+  
+    <link rel="alternate" href="/atom.xml" title="朝夕间" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">朝夕间</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一万年太久</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-git-learn" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/30/git-learn/" class="article-date">
+  <time datetime="2018-04-30T07:55:01.000Z" itemprop="datePublished">2018-04-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/30/git-learn/">git-learn</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="git-学习笔记"><a href="#git-学习笔记" class="headerlink" title="git 学习笔记"></a>git 学习笔记</h1><p><strong>安装git</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git    # 安装git</span><br><span class="line">git config --global user.name &apos;My Name&apos;  # 设置名字</span><br><span class="line">git config --global user.email &apos;email@example.com&apos;</span><br><span class="line">git config --all  # 列出当前所有参数</span><br></pre></td></tr></table></figure></p>
+<p><strong>创建git</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git init  # 初始化,将当前目录变成Git可以管理的仓库</span><br><span class="line">ls -ah   # 查看隐藏目录，有 .git 目录</span><br><span class="line">git add &lt;file&gt;   # 可添加多个文件</span><br><span class="line">git commit -m  &apos;explanation&apos;    # 添加解释</span><br></pre></td></tr></table></figure></p>
+<p><strong>版本恢复</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git status    # 查看文件修改了是否未提交</span><br><span class="line">git diff &lt;file&gt;    # 查看文件修改了哪些地方</span><br><span class="line">git log  # 查看 历史提交记录</span><br><span class="line">git log --pretty=oneline  # 提交记录，只显示关键信息</span><br><span class="line">git reset --hard HEAD^  # 回退到上一个版本</span><br><span class="line">git reset --hard 3628164   # 根据commit id 恢复到指定的版本</span><br><span class="line">git reflog    # 查看命令历史</span><br><span class="line">git reset HEAD &lt;file&gt;   # 将缓存区的撤回到工作区，相当于撤销 git add 命令</span><br><span class="line">git checkout --&lt;file&gt;  # 版本库里的版本替换工作区的版本</span><br><span class="line">git rm &lt;file&gt;   </span><br><span class="line">git commit -m &quot;remove readme.txt&quot;  # 从版本库删除文件</span><br></pre></td></tr></table></figure></p>
+<p><strong>远程库</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:github_username/repo_name.git  </span><br><span class="line"># 如果origin已存在，先执行git remote rm origin</span><br><span class="line">git pull   # 将远程库对应分支fetch and merge</span><br><span class="line">git remote # 显示要推送的远程库别名</span><br><span class="line">git push -u origin master  # 将分支master推送到远程库origin</span><br><span class="line">git push origin &lt;branch_name&gt;  # 将分支branch_name推送到远程库origin上</span><br><span class="line">git clone git@github.com:michaelliao/gitskills.git  # 下载远程库master分支</span><br><span class="line">git checkout -b &lt;branch_name&gt; orgin/&lt;branch_name&gt;  # 将远程分支clone到本地</span><br><span class="line">git branch --set-upstream &lt;branch_name&gt; origin/&lt;branch_name&gt; # 本地跟远程分支建立联系</span><br></pre></td></tr></table></figure></p>
+<p><strong>分支管理</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">git branch &lt;branch_name&gt;   # 从当前分支创建另一个分支</span><br><span class="line">git checkout &lt;branch_name&gt;   # 切换分支</span><br><span class="line">git checkout -b &lt;name&gt;  # 创建并切换分支</span><br><span class="line">git branch   # 查看分支</span><br><span class="line">git merge &lt;name&gt;  # 合并指定分支到当前分支</span><br><span class="line">git branch -d  &lt;name&gt;  # 删除分支</span><br><span class="line">git branch -D  &lt;name&gt;  # 强行删除分支</span><br><span class="line">git log --graph  # 以图形方式查看提交历史</span><br><span class="line">git merge --no-ff -m &quot;merge with no-ff&quot; &lt;name&gt;  #合并新分支， 不抹掉历史</span><br><span class="line">git stash   # 保存当前工作区，除非有没被Git管理的文件</span><br><span class="line">git stash list   # 查看保存的工作区</span><br><span class="line">git stash pop   # 恢复的同时把stash内容也删了</span><br></pre></td></tr></table></figure></p>
+<p><strong>标签管理</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git tag  v1.0  # 对当前分支打上指定标签</span><br><span class="line">git tag v1.1 &lt;commit_id&gt;  # 对指定的 commit id 打上指定的标签</span><br><span class="line">git tag -a v0.1 -m &quot;version 0.1 released&quot; &lt;commit_id&gt;</span><br><span class="line">git show &lt;tag_name&gt; # 看指定标签的说明文字</span><br><span class="line">git tag -d v1.0  # 删除本地的指定标签</span><br><span class="line">git push origin :refs/tags/v1.0  # 删除远程上的指定标签</span><br><span class="line">git push origin v1.0   # 推送指定标签到远程上</span><br><span class="line">gt push origin --tags   # 推送所有标签到远程上</span><br></pre></td></tr></table></figure></p>
+<p><strong>自定义git</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global color.ui true  # 允许git适当地显示不同的颜色</span><br><span class="line">忽略某些文件时，需要编写.gitignore；</span><br><span class="line">.gitignore文件本身要放到版本库里，并且可以对.gitignore做版本管理！</span><br></pre></td></tr></table></figure></p>
+<p>注意</p>
+<blockquote>
+<ol>
+<li>所有的版本控制系统，其实只能跟踪文本文件的改动，比如TXT文件、程序代码等</li>
+<li>注意工作区和版本库（缓存区、master）之间的含义，必须先add到缓存区，再commit到master</li>
+<li>合并的时候，有可能会产生冲突。<br>冲突的产生是因为在合并的时候，不同分支修改了相同的位置。所以在合并的时候git不知道那个到底是你想保留的，需要手动选择想要保留的内容，解决冲突。</li>
+</ol>
+</blockquote>
+<p>参考网址：<br><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" target="_blank" rel="noopener">廖雪峰官网Git教程</a><br><a href="http://www.yiibai.com/git/home.html" target="_blank" rel="noopener">Git教程首页</a><br><a href="http://blog.csdn.net/top_code/article/details/50381432" target="_blank" rel="noopener">Git 提示fatal: remote origin already exists 错误解决办法</a><br><a href="http://blog.csdn.net/u010853261/article/details/51935503" target="_blank" rel="noopener">git2.9.2使用总结</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/30/git-learn/" data-id="cjglypp9q0000w4nw2v7lgmty" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/30/hello-world/" class="article-date">
+  <time datetime="2018-04-30T07:25:18.623Z" itemprop="datePublished">2018-04-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/30/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/30/hello-world/" data-id="cjglyppa10001w4nwj0u77lsa" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/04/30/git-learn/">git-learn</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/30/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 两条腿<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
