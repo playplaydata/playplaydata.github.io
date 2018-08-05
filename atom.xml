@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-17T10:31:05.454Z</updated>
+  <updated>2018-08-05T04:39:33.620Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>决战大数据</title>
+    <link href="http://yoursite.com/2018/08/05/%E5%86%B3%E6%88%98%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    <id>http://yoursite.com/2018/08/05/决战大数据/</id>
+    <published>2018-08-05T04:35:00.000Z</published>
+    <updated>2018-08-05T04:39:33.620Z</updated>
+    
+    <content type="html"><![CDATA[<p>很久前就买了这本书，当时囫囵吞枣地读了一遍，感觉讲很飘，没什么收获。最近在“复盘”，就拿过来细细品读了。书，是一本好书，除了有点碎片化，串起来费劲了点。</p><p>作者先介绍了自己在阿里巴巴带团队的经历，给人的印象是做得很辛苦，但是很有收获：从无到有地缔造了强大的数据团队。在正文主要是讲数据分析人员的成长方式，思维方式，更多的是从道的角度来讲，细细品读，有种功力提升的感觉。</p><a id="more"></a><h4 id="以下是思维导图："><a href="#以下是思维导图：" class="headerlink" title="以下是思维导图："></a>以下是思维导图：</h4><p><a href="https://i.loli.net/2018/08/05/5b667d9ba1d95.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/08/05/5b667d9ba1d95.png" alt="决战大数据--思维导图.png"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很久前就买了这本书，当时囫囵吞枣地读了一遍，感觉讲很飘，没什么收获。最近在“复盘”，就拿过来细细品读了。书，是一本好书，除了有点碎片化，串起来费劲了点。&lt;/p&gt;
+&lt;p&gt;作者先介绍了自己在阿里巴巴带团队的经历，给人的印象是做得很辛苦，但是很有收获：从无到有地缔造了强大的数据团队。在正文主要是讲数据分析人员的成长方式，思维方式，更多的是从道的角度来讲，细细品读，有种功力提升的感觉。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Reading" scheme="http://yoursite.com/tags/Reading/"/>
+    
+  </entry>
   
   <entry>
     <title>终身学习</title>
