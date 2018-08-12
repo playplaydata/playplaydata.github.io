@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-05T04:39:33.620Z</updated>
+  <updated>2018-08-12T11:09:27.675Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>腾讯方法</title>
+    <link href="http://yoursite.com/2018/08/12/%E8%85%BE%E8%AE%AF%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2018/08/12/腾讯方法/</id>
+    <published>2018-08-12T11:06:00.000Z</published>
+    <updated>2018-08-12T11:09:27.675Z</updated>
+    
+    <content type="html"><![CDATA[<p>《腾讯方法》是2015年出的书籍，通过3个案例全面展示了腾讯是如何做产品和运营的。感受最深的有两点：一是轻敏捷开发已经成为创新互联网企业开发的标配；二是3年前这本书就出了，为啥当初没有读呢？也就是我的思想慢了3年。下面的思维导图，并没有依写书的顺序，而是依可借鉴的点来写。<br><a id="more"></a></p><h4 id="以下是思维导图："><a href="#以下是思维导图：" class="headerlink" title="以下是思维导图："></a>以下是思维导图：</h4><p><a href="https://i.loli.net/2018/08/12/5b7014e2adcce.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/08/12/5b7014e2adcce.png" alt="腾讯方法--思维导图.png"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;《腾讯方法》是2015年出的书籍，通过3个案例全面展示了腾讯是如何做产品和运营的。感受最深的有两点：一是轻敏捷开发已经成为创新互联网企业开发的标配；二是3年前这本书就出了，为啥当初没有读呢？也就是我的思想慢了3年。下面的思维导图，并没有依写书的顺序，而是依可借鉴的点来写。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Reading" scheme="http://yoursite.com/tags/Reading/"/>
+    
+  </entry>
   
   <entry>
     <title>决战大数据</title>
